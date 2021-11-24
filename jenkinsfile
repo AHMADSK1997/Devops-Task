@@ -15,19 +15,19 @@ pipeline {
             }
         }
         stage('Login') {
-			steps {
-				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-			}
-		}  
-		stage('Tag') {
-			steps {
-			    sh 'sudo docker tag webserver ahmadsk/webserver'
-			}
-		}
+	    steps {
+		sh 'echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+	    }
+	}  
+	stage('Tag') {
+	    steps {
+	         sh 'sudo docker tag webserver ahmadsk/webserver'
+	     }
+	}
         stage('Push') {
-			steps {
-				sh 'sudo docker push ahmadsk/webserver'
-			}
+            steps {
+		sh 'sudo docker push ahmadsk/webserver'
+	   }  
         }
     }
 }
