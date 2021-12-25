@@ -47,6 +47,3 @@ COPY ./index.html /usr/share/nginx/html/index.html
     $ kubectl apply -f Ingress.yml
 ```
 You can access the application here: http://localhost/
-
-<img width="700" alt="screenshot" src="https://imgur.com/AhxV60J.jpg">
-
