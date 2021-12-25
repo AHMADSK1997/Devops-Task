@@ -1,5 +1,4 @@
 # Kaltura Devops home assignment
-<img src="https://www.kaltura.org/images/logo.png">
 
 ## Befor Start
 * Install the nginx ingress-controller in your cluster, follow instructions in this link: https://kubernetes.github.io/ingress-nginx/deploy/#docker-desktop
